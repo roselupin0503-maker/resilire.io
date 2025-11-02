@@ -1,12 +1,38 @@
-<!doctype html><html lang="ko"><meta charset="utf-8">
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>New Noise</title>
-<body style="font-family:system-ui,sans-serif;padding:24px">
-  <h1>New Noise</h1>
-  <p>이 문장이 보이면 설정 성공입니다.</p>
+<title>New Noise | Audio</title>
+<style>
+  body{font-family:system-ui,sans-serif;margin:0}
+  .nav{display:flex;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff}
+  .nav a{text-decoration:none;color:#111;padding:8px 10px;border-radius:8px}
+  .nav a.active,.nav a:hover{background:#f2f2f2}
+  .wrap{max-width:720px;margin:24px auto;padding:0 16px}
+  audio{width:100%;margin:10px 0 20px}
+  h1{font-size:1.3rem;margin:.5rem 0}
+</style>
+<body>
+  <nav class="nav">
+    <strong>New Noise</strong>
+    <a class="active" href="index.html">오디오</a>
+    <a href="survey.html">설문</a>
+  </nav>
 
-  <h3>🎧 테스트 오디오</h3>
-  <audio controls preload="metadata">
-    <source src="audio/New_Noise.mp3" type="audio/mpeg">
-  </audio>
-</body></html>
+  <main class="wrap">
+    <h1>🎧 New Noise (Pink/White/Brown)</h1>
+    <p style="color:#666">버튼을 눌러 재생하세요. (모바일 자동재생 제한)</p>
+
+    <h3>메인 트랙</h3>
+    <audio controls preload="metadata">
+      <source src="audio/New_Noise.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 필요하면 개별 트랙 추가 -->
+    <!--
+    <h3>Pink</h3>
+    <audio controls preload="metadata"><source src="audio/pink.mp3" type="audio/mpeg"></audio>
+    -->
+  </main>
+</body>
+</html>
